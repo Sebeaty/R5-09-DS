@@ -29,6 +29,7 @@ jobs:
       - uses: actions/checkout@v4
 
       # temp.txt DEVRAIT se créer, mais ni cp, ni echo ne créent le fichier : erreur débile qui n'est jamais arrivé dans l'histoire entière de BASH 
+      # maintenant temp.txt fonctionne, je n'ai rien touché, incroyable
       - name: teste creation nouveau fichier
         run: | 
           echo "aba" > temp.txt
@@ -36,7 +37,7 @@ jobs:
           echo "CHAMPVILLARD SÉBASTIEN" > Q6_archive_date.txt
           date +%c >> Q6_archive_date.txt
           cat Q6.java >> Q6_archive_date.txt
-          diff --suppress-common-lines Q6_archive_date.txt temp.txt
+          diff Q6_archive_date.txt temp.txt
         
         # push
       - name: commmit et push
