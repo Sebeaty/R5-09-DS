@@ -27,9 +27,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: cp README.md Q1_archive_README.md 
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name:  commmit et push
         run: |
-          cp README.md Q1_archive_README.md
+          git config --global user.name sebeaty
+          git config --global user.email sebachamp007@outlook.fr
+          git add Q1_archive_README.md 
+          git commit -m "test push de Q1_archive_README.md"
+          git push
