@@ -30,7 +30,7 @@ jobs:
         run: | 
           date > Q2_archive_README.md
           echo "CHAMPVILLARD SÉBASTIEN" >> Q2_archive_README.md
-          README.md >> Q2_archive_README.md
+          cat README.md >> Q2_archive_README.md
         
         # push
       - name: commmit et push
