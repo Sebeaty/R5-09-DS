@@ -36,7 +36,7 @@ jobs:
           echo "CHAMPVILLARD SÉBASTIEN" > Q6_archive_date.txt
           date +%d-%m-%Y >> Q6_archive_date.txt
           cat Q6.java >> Q6_archive_date.txt
-          diff --suppress-common-lines Q6_archive_date.txt temp
+          diff --suppress-common-lines Q6_archive_date.txt temp.txt
         
         # push
       - name: commmit et push
