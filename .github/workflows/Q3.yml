@@ -32,7 +32,7 @@ jobs:
       - name: teste creation nouveau fichier
         run: | 
           echo "CHAMPVILLARD SÉBASTIEN" >> Q3_archive_README.md
-          cat README.md >> Q3_archive_README.md
+          cat Q3.java >> Q3_archive_README.md
         
         # push
       - name: commmit et push
