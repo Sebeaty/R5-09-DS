@@ -34,7 +34,7 @@ jobs:
           echo "aba" > temp.txt
           cp Q6_archive_date.txt temp.txt
           echo "CHAMPVILLARD SÉBASTIEN" > Q6_archive_date.txt
-          date +%d-%m-%Y >> Q6_archive_date.txt
+          date +%c >> Q6_archive_date.txt
           cat Q6.java >> Q6_archive_date.txt
           diff --suppress-common-lines Q6_archive_date.txt temp.txt
         
